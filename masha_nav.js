@@ -15,7 +15,7 @@
     module.exports = factory(require('masha'));
   } else {
     // Browser globals
-    factory({MaSha: global.MaSha});
+    global.MaShaNav = factory({MaSha: global.MaSha});
   }
 }(this, function (masha) {
     var MaSha = masha.MaSha;
@@ -315,5 +315,6 @@
         return rect;
     }
 
+    return MaShaNav;
 
 }));
