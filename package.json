@@ -1,0 +1,29 @@
+{
+  "name": "masha-nav",
+  "version": "1.0.0",
+  "description": "Next/previous navigation for MaSha",
+  "main": "masha_nav.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmartTeleMax/MaSha-nav.git"
+  },
+  "keywords": [
+    "mark",
+    "share",
+    "selection",
+    "plugin",
+    "navigation"
+  ],
+  "author": "STM Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SmartTeleMax/MaSha-nav/issues"
+  },
+  "homepage": "https://github.com/SmartTeleMax/MaSha-nav#readme",
+  "dependencies": {
+    "masha": "^1.0.0"
+  }
+}
