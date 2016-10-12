@@ -1,6 +1,6 @@
 {
   "name": "masha-nav",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Next/previous navigation for MaSha",
   "main": "masha_nav.js",
   "scripts": {

@@ -294,7 +294,7 @@
         // Support: IE <=11 only
         // Running getBoundingClientRect on a
         // disconnected node in IE throws an error
-        if ( !elem.getClientRects().length ) {
+        if (!elem || !elem.getClientRects().length) {
             return { top: 0, left: 0 };
         }
 
