@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/SmartTeleMax/MaSha-nav#readme",
   "dependencies": {
-    "masha": "^1.0.0"
+    "masha": "~1"
   }
 }
