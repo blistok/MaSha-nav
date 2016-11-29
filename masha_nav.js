@@ -92,8 +92,8 @@
         },
         countTotal: function(){
             var count = 0;
-            for(var i in this.options.ranges){
-                for(var j in this.options.ranges[i]){
+            for(var i in this.options.ranges) if (this.options.ranges.hasOwnProperty(i)){
+                for(var j in this.options.ranges[i])  if (this.options.ranges[i].hasOwnProperty(j)) {
                     count++;
                 }
             }
@@ -134,17 +134,15 @@
         },
         getElements: function(){
             var c = {};
-            for(var i in this.options.ranges){
-                for(var j in this.options.ranges[i])
-                {
-
+            for(var i in this.options.ranges) if (this.options.ranges.hasOwnProperty(i)){
+                for(var j in this.options.ranges[i])  if (this.options.ranges[i].hasOwnProperty(j)) {
                     var el = $M.byClassName(this.options.selectable, j);
 
                     c[j] = offset(el[0]).top; // jQuery dependency
                 }
             }
             var sortable = [];
-            for (var n in c) {
+            for (var n in c) if (c.hasOwnProperty(n)) {
               sortable.push([n, c[n]]);
             }
             sortable.sort(function(a, b) {
