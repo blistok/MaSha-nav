@@ -42,7 +42,7 @@
 
     MaShaNav.defaultOptions = {
         'selectable' : 'selectable-content',
-        't_offsetTop': 100
+        't_offsetTop': window.innerHeight / 2
     };
 
     MaShaNav.prototype = {
