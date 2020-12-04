@@ -1,81 +1,94 @@
-//	Nav
-@mixin mob()
-	@media only screen and (max-width: 730px)
-		@content
+#mashajs-nav {
+	position: relative;
+	height: 100%;
+}
 
-#mashajs-nav
-	position: relative
-	height: 100%
-	+mob
-		display: none
-	.num
-		position: absolute
-		left: -13.5px
-		top: 50%
-		margin-top: -7.5px
-		font-size: 11px
-		line-height: 15px
-		width: 55px
-		text-align: center
-		color: #8C90A5
-		transition: opacity 0.5s ease-in-out
+@media only screen and (max-width: 730px) {
+	#mashajs-nav {
+		display: none;
+	}
+}
+
+#mashajs-nav .num {
+	position: absolute;
+	left: -13.5px;
+	top: 50%;
+	margin-top: -7.5px;
+	font-size: 11px;
+	line-height: 15px;
+	width: 55px;
+	text-align: center;
+	color: #8C90A5;
+	transition: opacity 0.5s ease-in-out;
+}
 
 #mashajs-up,
-#mashajs-down
-	width: 26px
-	height: 26px
-	position: absolute
-	cursor: pointer
-	-webkit-appearance: none
-	-moz-appearance: none
-	border: 0
-	border-radius: 13px
-	background: transparent
-	background: url('./img/masha-nav-arrow.svg') no-repeat 0 0
-	background-size: 20px 24px
-	background-position: center 0
-	opacity: 1
-
+#mashajs-down {
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: 0;
+	border-radius: 13px;
+	background: transparent;
+	background: url("./img/masha-nav-arrow.svg") no-repeat 0 0;
+	background-size: 20px 24px;
+	background-position: center 0;
+	opacity: 1;
+}
 
 #mashajs-up:hover,
-#mashajs-down:hover
-	background-image: url('./img/masha-nav-arrow-hover.svg')
+#mashajs-down:hover {
+	background-image: url("./img/masha-nav-arrow-hover.svg");
+}
 
+#mashajs-down {
+	bottom: 0;
+	transform: rotate(180deg);
+}
 
-#mashajs-down
-	bottom: 0
-	transform: rotate(180deg)
-
-#mashajs-up
-	top: 0
+#mashajs-up {
+	top: 0;
+}
 
 #mashajs-down.disabled,
-#mashajs-up.disabled
-	cursor: default
-	opacity: 0.5
-	background-image: url('./img/masha-nav-arrow.svg')
+#mashajs-up.disabled {
+	cursor: default;
+	opacity: 0.5;
+	background-image: url("./img/masha-nav-arrow.svg");
+}
 
-#mashajs-nav-position
-	position: fixed
-	z-index: 100000
-	height: 62px
-	top: 50%
-	height: 90px
-	margin-top: -45px
-	bottom: 20px
-	width: 28px
-	left: 980px - 28px - 10px
-	display: block
-	opacity: 1
-	transition: opacity 0.5s ease-in-out
-	&.is-disabled
-		display: none
-		opacity: 0
-	+mob
-		display: none
+#mashajs-nav-position {
+	position: fixed;
+	z-index: 100000;
+	height: 62px;
+	top: 50%;
+	height: 90px;
+	margin-top: -45px;
+	bottom: 20px;
+	width: 28px;
+	left: 942px;
+	display: block;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
 
-#mashajs-nav-center
-	height: 100%
-	display: block
-	margin: auto
-	position: relative
+#mashajs-nav-position.is-disabled {
+	display: none;
+	opacity: 0;
+}
+
+@media only screen and (max-width: 730px) {
+	#mashajs-nav-position {
+		display: none;
+	}
+}
+
+#mashajs-nav-center {
+	height: 100%;
+	display: block;
+	margin: auto;
+	position: relative;
+}
